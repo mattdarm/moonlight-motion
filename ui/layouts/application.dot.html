@@ -16,6 +16,9 @@
     <!-- UIkit CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.20/css/uikit.min.css" />
 
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
+
     <!-- Stylesheets -->
     <link rel="stylesheet" href="../../app/stylesheets/application.css" />
 
@@ -35,6 +38,21 @@
 
 
     <script src="app/javascript/application.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            setTimeout(function () {
+                $('.logo__leftM').animate({
+                    left: '36%',
+                }, 1000);
+                $('.logo__rightM').animate({
+                    left: '44%',
+                }, 1000);
+            }, 2500);
+        });
+
+
+    </script>
 </body>
 
 </html>
