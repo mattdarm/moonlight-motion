@@ -8,7 +8,10 @@
 // @font-face rules
 //***********************************
 
-
+@font-face
+    font-family: 'ModernM'
+    src: url('/app/fonts/ModernM.eot') /* IE9 Compat Modes */
+    src: url('/app/fonts/ModernM.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('/app/fonts/ModernM.woff') format('woff'), /* Pretty Modern Browsers */ url('/app/fonts/ModernM.ttf')  format('truetype'), /* Safari, Android, iOS */ url('/app/fonts/ModernM.svg#svgFontName') format('svg') /* Legacy iOS */
 
 
 //***********************************
@@ -16,9 +19,10 @@
 //***********************************
 
 
-$narrow: "Avenir", Arial, sans-serif
+$narrow: "ModernM", "Avenir", "Helvetica", Arial, sans-serif
 
 *
-    font-family: 'Avenir', serif!important
+    font-family: 'ModernM', "Avenir", "Helvetica", serif!important
     -webkit-font-smoothing: antialiased
     -moz-osx-font-smoothing: grayscale
+
