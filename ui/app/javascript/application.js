@@ -18,7 +18,7 @@ $(function () {
 
     FastClick.attach(document.body);
 
-    var modules = ['nav', 'cookies'];
+    var modules = ['animations', 'cookies'];
 
     for (var i = 0; i < modules.length; i++) {
         DG[modules[i]].init();
