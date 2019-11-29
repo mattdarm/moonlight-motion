@@ -7,6 +7,15 @@
 <head>
     <!-- Site Info -->
     <title>{{= it.document.title }}</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153571673-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-153571673-1');
+    </script>
     <meta charset="UTF-8">
     <meta name="description" content="{{= it.document.description }}">
     <meta name="keywords" content="{{= it.document.keywords }}" />
