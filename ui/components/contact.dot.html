@@ -6,7 +6,7 @@
                     <h2 class="section__title uk-text-center">Contact</h2>
                 </div>
                 <div class="uk-grid">
-                    <div class="uk-width-medium uk-margin-auto">
+                    <div class="uk-width-large uk-margin-auto">
                         <p class="paragraph">
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur minus omnis, vel
                             officiis
@@ -17,13 +17,23 @@
                 </div>
                 <div class="uk-grid">
                     <div class="uk-width-1-2">
-                        
+                        <div class="uk-grid">
+                            <div class="uk-width-auto">
+                                <img class="section__icon" src="../images/interface/mail.svg" alt="" uk-svg height="65" width="68">
+                            </div>
+                            <div class="uk-width-expand">
+                                <a href="mailto:moonlightmotion.band@gmail.com">
+                                    moonlightmotion.band@gmail.com
+                                </a>
+                            </div>
+                        </div>
                     </div>
                     <div class="uk-width-1-2">
                         <img src="./../app/images/mountains_trans.png" alt="">
                     </div>
                 </div>
             </div>
+            {{= it.include("footer") }}
         </div>
     </div>
 </section>
