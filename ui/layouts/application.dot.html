@@ -22,20 +22,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 
+    <!-- Google font - Montserrat -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+
     <!-- UIkit CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.20/css/uikit.min.css" />
 
     <!-- Animate CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="../../app/stylesheets/application.css" />
-
     <!-- Full page JS -->
     <link rel="stylesheet" type="text/css" href="https://rawgit.com/alvarotrigo/fullPage.js/dev/src/fullpage.css" />
 
-
-
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../../app/stylesheets/application.css" />
 
 </head>
 
@@ -59,10 +59,11 @@
         new fullpage('#fullpage', {
             licenseKey: '558EDFAC-AE174C8C-8F3936DB-D114569A',
             anchors: [
-                'headerSection', 'aboutSection'
+                'headerSection', 'aboutSection', 'bandSection', 'showsSection', 'contactSection'
             ],
             navigation: true,
             navigationPosition: 'left',
+            navigationTooltips: ['Home', 'About', 'Band', 'Shows', 'Contact'],
             scrollingSpeed: 1600,
             normalScrollElementTouchThreshold: 5,
         });

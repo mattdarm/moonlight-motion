@@ -1,2 +1,88 @@
 .navigation
     z-index: 999
+    &__logo
+        width: 200px
+        margin: 10px
+    &__text
+        margin-top: 10px
+    &__icon
+        text-decoration: none
+        margin-right: 10px
+        &:hover
+            text-decoration: none
+    &__svg
+        width: 30px
+
+#fp-nav
+    &.active
+        opacity: 1
+    &.left
+        left: 12px
+    ul
+        @extend %list
+        li
+            +margin(5px 0px)
+            +size(auto)	
+            &:nth-of-type(1)
+                a
+                    &:before
+                        background-image: url(../images/interface/icons/section-home.svg)
+            a
+                //background: $color-brand
+                background: $amaranth
+                display: block
+                border-radius: 50%
+                +display(flex)
+                +transition(transform .3s ease-in-out, background .3s ease-in-out)
+                &:before
+                    content: ""
+                    +margin(auto)
+                    display: block
+                    +size(30px)
+                    background-size: 100% 100%
+                &.active
+                    background: $amaranth
+                    + .fp-tooltip
+                        width: 100px
+                        left: 0px
+                        opacity: 1
+                        font-family: "Montserrat", "Avenir", "Helvetica", Arial!important
+                        font-weight: 500
+                        line-height: 30px
+                        +transition-duration(.6s, .3s)
+                span
+                    display: none
+            .fp-tooltip
+                font-family: "Montserrat", "Avenir", "Helvetica", Arial
+                left: 0px!important
+                font-family: "Montserrat", "Avenir", "Helvetica", Arial!important
+                font-weight: 500
+                line-height: 30px
+                font-size: 16px
+                background: $amaranth
+                color: $white
+                padding-left: 24px
+                border-radius: 50px
+                text-align: center
+                +position(absolute, 0px null 0px 23px)
+                width: 0px
+                z-index: -1
+                opacity: 0
+                white-space: nowrap
+                +transition(opacity .6s ease-in-out, width .3s ease-in-out)
+                +transition-duration(.2s, .3s)
+            &:hover
+                a
+                    background: $amaranth
+                .fp-tooltip
+                    width: 100px
+                    opacity: 1
+                    +transition-duration(.6s, .3s)
+    ul li 
+        width: 30px!important
+        height: 30px!important
+        a span
+            width: 30px!important
+            height: 30px!important
+            background: $amaranth!important
+    
