@@ -26,7 +26,25 @@
             &:nth-of-type(1)
                 a
                     &:before
-                        background-image: url(../images/interface/icons/section-home.svg)
+                        background-image: url(../images/interface/home.svg)
+            &:nth-of-type(2)
+                a
+                    &:before
+                        +size(18px)
+                        background-image: url(../images/interface/notes.svg)
+            &:nth-of-type(3)
+                a
+                    &:before
+                        background-image: url(../images/interface/users.svg)
+            &:nth-of-type(4)
+                a
+                    &:before
+                        background-image: url(../images/interface/microphone.svg)
+            &:nth-of-type(5)
+                a
+                    &:before
+                        +size(18px)
+                        background-image: url(../images/interface/mail.svg)
             a
                 //background: $color-brand
                 background: $amaranth
@@ -38,10 +56,10 @@
                     content: ""
                     +margin(auto)
                     display: block
-                    +size(30px)
+                    +size(20px)
                     background-size: 100% 100%
                 &.active
-                    background: $amaranth
+                    background: darker(30%, $amaranth)
                     + .fp-tooltip
                         width: 100px
                         left: 0px
@@ -73,10 +91,11 @@
                 +transition-duration(.2s, .3s)
             &:hover
                 a
-                    background: $amaranth
+                    background: darker(30%, $amaranth)
                 .fp-tooltip
                     width: 100px
                     opacity: 1
+                    background: darker(30%, $amaranth)
                     +transition-duration(.6s, .3s)
     ul li 
         width: 30px!important
@@ -84,5 +103,4 @@
         a span
             width: 30px!important
             height: 30px!important
-            background: $amaranth!important
     
