@@ -23,7 +23,7 @@
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 
     <!-- Google font - Montserrat -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900&display=swap" rel="stylesheet">
 
     <!-- UIkit CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.20/css/uikit.min.css" />
@@ -66,6 +66,12 @@
             navigationTooltips: ['Home', 'About', 'Band', 'Shows', 'Contact'],
             scrollingSpeed: 1600,
             normalScrollElementTouchThreshold: 5,
+            afterLoad: function (anchorLink, index) {
+                console.log('load');
+                setTimeout(function () {
+                    $('#fp-nav a.active').removeClass('active');
+                }, 2000);
+            }
         });
 
     </script>
