@@ -8,65 +8,11 @@
 
 {{= it.include("cookies") }}
 
-<div class="uk-grid uk-grid-collapse">
-    <div class="uk-width-1-1 uk-width-auto@m uk-width-1-4@l">
-        <section>
-            <div class="uk-section hero">
-                <div class="uk-container uk-margin-top-xlarge">
-                    <div class="uk-grid-small" uk-grid>
-                      
-        
-                    </div>
-                </div>
-        </section>
-        {{= it.include("footer") }}
-    </div>
-    <div class="uk-width-1-1 uk-width-expand@m uk-width-3-4@l">
-        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: fade; ratio: false; autoplay: true; autoplay-interval: 4000">
-
-            <ul class="uk-slideshow-items" uk-height-viewport="min-height: 300">
-                <li>
-                    <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left">
-                        <img src="./../app/images/slider/slide_1.jpg" alt="" uk-cover>
-                    </div>
-                </li>
-                <li>
-                    <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-top-right">
-                        <img src="./../app/images/slider/slide_2.jpg" alt="" uk-cover>
-                    </div>
-                </li>
-                <li>
-                    <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left">
-                        <img src="./../app/images/slider/slide_3.jpg" alt="" uk-cover>
-                    </div>
-                </li>
-                <li>
-                    <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-bottom-left">
-                        <img src="./../app/images/slider/slide_4.jpg" alt="" uk-cover>
-                    </div>
-                </li>
-                <li>
-                    <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left">
-                        <img src="./../app/images/slider/slide_5.jpg" alt="" uk-cover>
-                    </div>
-                </li>
-                <li>
-                    <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-right">
-                        <img src="./../app/images/slider/slide_6.jpg" alt="" uk-cover>
-                    </div>
-                </li>
-                <li>
-                    <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-top-right">
-                        <img src="./../app/images/slider/slide_7.jpg" alt="" uk-cover>
-                    </div>
-                </li>
-            </ul>
-
-            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
-            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
-
-        </div>
-    </div>
+<div id="fullpage">
+    {{= it.include("header") }}
+    {{= it.include("about") }}
+    {{= it.include("footer") }}
 </div>
+
 
 

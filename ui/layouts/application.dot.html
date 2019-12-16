@@ -34,14 +34,12 @@
     <!-- Full page JS -->
     <link rel="stylesheet" type="text/css" href="https://rawgit.com/alvarotrigo/fullPage.js/dev/src/fullpage.css" />
 
-    
+
 
 
 </head>
 
-
 <body class="{{= it.document.body_class }}">
-
 
     {{= it.document }}
 
@@ -52,10 +50,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.20/js/uikit.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.20/js/uikit-icons.min.js"></script>
 
-     <!-- Full page JS -->
+    <!-- Full page JS -->
     <script type="text/javascript" src="https://rawgit.com/alvarotrigo/fullPage.js/dev/src/fullpage.js"></script>
 
     <script src="app/javascript/application.js"></script>
+
+    <script>
+        new fullpage('#fullpage', {
+            licenseKey: '558EDFAC-AE174C8C-8F3936DB-D114569A',
+            anchors: [
+                'headerSection', 'aboutSection'
+            ],
+            navigation: true,
+            navigationPosition: 'left',
+            scrollingSpeed: 1600,
+            normalScrollElementTouchThreshold: 5,
+        });
+
+    </script>
 
 </body>
 
